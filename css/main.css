@@ -90,6 +90,14 @@ textarea {
      box-shadow: none;
      min-height: 90px;
      padding-top: 20px;
+     transition: 1s all ease;
+   }
+
+   .effect {
+     background-color: #123156;
+     min-height: 30px;
+     box-shadow: 0 0 10px black;
+     padding-top: 0;
    }
 
    .nav > li > a {
@@ -133,6 +141,24 @@ textarea {
      padding-bottom: 100%;
      width: 100%;
    }
+
+   .blue-circle div {
+     float: left;
+     line-height: 1em;
+     width: 100%;
+     padding-top: 40%;
+     text-align: center;
+     color: #fff;
+   }
+
+   .blue-circle div i {
+     font-size: 3em;
+   }
+
+   .features .blue-circle div i {
+     font-size: 2em;
+   }
+
 
    #about .blue-circle {
      padding-bottom: 50%;
@@ -233,25 +259,57 @@ textarea {
      color: #0c243d;
    }
 
+   section#download .platforms i {
+     font-size: 2.5em;
+     position: absolute;
+     left: 20px;
+     top: 12px;
+   }
 
+   /* Support Section */
 
+   section#support {
+     background-color: #15365b;
+     padding-bottom: 0;
+   }
 
+   section#support h2 {
+     color: #fff;
+   }
 
+   section#support p {
+     color: #fff;
+     font-size: 1.6em;
+     margin-bottom: 20px;
+   }
 
+   section#support input,
+   section#support textarea {
+     min-heigh: 50px;
+     margin-bottom: 20px;
+   }
 
+   section#support textarea {
+     min-height: 200px;
+   }
 
+   section#support input.btn {
+     background-color: orange;
+     border: none;
+     font-size: 1.4em;
+     padding: 5px 50px;
+   }
 
+   /* Footer Section */
 
-
-
-
-
-
-
-
-
-
-
+   #footer p {
+     background-color: #102745;
+     padding: 10px 0;
+     color: #fff;
+     margin-bottom: 0;
+     letter-spacing: 1.5px;
+     font-size: .75
+   }
 
 
 
