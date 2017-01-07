@@ -398,10 +398,23 @@ textarea {
     background-color: #fff;
   }
 
+  section#slider {
+    min-height: 450px;
+  }
+
   #about blue-circle,
   .blue-circle {
     width: 50%;
     padding-bottom: 50%;
+  }
+
+  section#about i,
+  section#features i {
+    font-size: 4rem;
+  }
+
+  .blue-circle div {
+    padding-top: 33%;
   }
 
   .features-image {
@@ -443,8 +456,33 @@ textarea {
     top: 2px;
   }
 
+  section#support input.btn {
+    width: 100%;
+  }
+
 }
-@media (min-width: 768px) {}
+
+@media (min-width: 768px) {
+
+  section#features .features-image img {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  section#download .platforms > div {
+    width: 100%;
+    right: 30px;
+  }
+
+  section#download .platforms > div {
+    margin-bottom: 10px;
+  }
+
+  section#download .platforms i {
+    top: 2px;
+  }
+
+}
 @media (min-width: 992px) {}
 @media (min-width: 1200px) {}
 
