@@ -10,37 +10,43 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrapValidator.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
 
       <!-- Main Navigation -->
 
       <header>
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div><!-- end .navbar-header -->
+
             <div class="navbar-collapse collapse">
               <ul class="nav nav-justified">
-                <li><a href="#">About The App</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Screenshots</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a data-scroll href="#about">About The App</a></li>
+                <li><a data-scroll href="#features">Features</a></li>
+                <li><a data-scroll href="#screenshots">Screenshots</a></li>
+                <li><a data-scroll href="#download">Download</a></li>
+                <li><a data-scroll href="#support">Support</a></li>
               </ul>
-            </div>
+            </div><!-- end .navbar-collapse -->
           </div><!-- end .container -->
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle Navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
 
-            </button>
-          </div><!-- end .navbar-header -->
         </nav>
       </header>
 
@@ -89,7 +95,7 @@
           <div class="row">
 
             <div class="col-sm-4">
-              <div class="blue-circle">
+              <div class="blue-circle animation1">
                 <div>
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                   <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -101,7 +107,7 @@
             </div>
 
             <div class="col-sm-4">
-              <div class="blue-circle">
+              <div class="blue-circle animation2">
                 <div>
                   <i class="fa fa-check" aria-hidden="true"></i>
                 </div>
@@ -111,7 +117,7 @@
             </div>
 
             <div class="col-sm-4">
-              <div class="blue-circle">
+              <div class="blue-circle animation3">
                 <div>
                   <i class="fa fa-apple" aria-hidden="true"></i>
                   <i class="fa fa-android" aria-hidden="true"></i>
@@ -142,7 +148,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation1">
                     <div>
                       <i class="fa fa-facebook" aria-hidden="true"></i>
                       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -158,7 +164,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation1">
                     <div>
                       <i class="fa fa-user" aria-hidden="true"></i>
                     </div>
@@ -172,7 +178,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation1">
                     <div>
                       <i class="fa fa-ticket" aria-hidden="true"></i>
                     </div>
@@ -186,7 +192,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation1">
                     <div>
                       <i class="fa fa-youtube-play" aria-hidden="true"></i>
                     </div>
@@ -200,7 +206,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation1">
                     <div>
                       <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                     </div>
@@ -224,7 +230,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation2">
                     <div>
                       <i class="fa fa-credit-card" aria-hidden="true"></i>
                     </div>
@@ -238,7 +244,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation2">
                     <div>
                       <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                     </div>
@@ -252,7 +258,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation2">
                     <div>
                       <i class="fa fa-exchange" aria-hidden="true"></i>
                     </div>
@@ -266,7 +272,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation2">
                     <div>
                       <i class="fa fa-check-square-o" aria-hidden="true"></i>
                     </div>
@@ -280,7 +286,7 @@
                   <p>Cheesecake pudding marzipan cake tiramisu s'mores pound cake.</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8">
-                  <div class="blue-circle">
+                  <div class="blue-circle animation2">
                     <div>
                       <i class="fa fa-tag" aria-hidden="true"></i>
                     </div>
@@ -300,17 +306,17 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4 animation1">
               <a href="#modal" data-toggle="modal" data-image-url="img/modal_tickets.png">
                 <img class="img-responsive" src="img/modal_tickets.png" alt="Movie Tickets" />
               </a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4 animation2">
               <a href="#modal" data-toggle="modal" data-image-url="img/modal_trailers.png">
                 <img class="img-responsive" src="img/modal_trailers.png" alt="Movie Trailers" />
               </a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4 animation3">
               <a href="#modal" data-toggle="modal" data-image-url="img/modal_points.png">
                 <img class="img-responsive" src="img/modal_points.png" alt="Movie Points" />
               </a>
@@ -322,7 +328,7 @@
 
       <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
         <div class="modal-body">
-          <img src="#" alt="" />
+          <img class="img-responsive" src="#" alt="" />
           <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
         </div>
       </div><!-- end #modal -->
@@ -345,28 +351,30 @@
               <!-- Left Side -->
 
               <div class="phone">
-                <img class="img-responsive" src="img/download.png" alt="Download Image" />
+                <img class="img-responsive animation1" src="img/download.png" alt="Download Image" />
               </div><!-- end .phone -->
 
               <!-- Right Side -->
 
               <div class="downloads-empty"></div>
 
-              <div class="container download">
-                <div class="row">
-                  <div class="col-sm-5 col-sm-offset-7">
-                    <h2 class="text-center text-uppercase">Choose Your Platform</h2>
-                    <section class="platforms text-center">
-                      <div class="col-md-5 col-sm-6">
-                        <i class="fa fa-apple" aria-hidden="true"></i>
-                        Download for <b>Apple iOS</b></div>
-                      <div class="col-md-5 col-sm-offset-1 col-sm-6">
-                        <i class="fa fa-android" aria-hidden="true"></i>
-                        Download for <b>Android</b></div>
-                    </section><!-- end .platforms -->
-                  </div>
-                </div><!-- end .row -->
-              </div><!-- end .container -->
+                <div class="container download">
+                  <div class="row">
+                    <div class="col-sm-5 col-sm-offset-7">
+                      <h2 class="text-center text-uppercase">Choose Your Platform</h2>
+                      <section class="platforms text-center">
+                        <!-- Apple -->
+                        <div class="col-md-5 col-xs-10 col-xs-offset-1 col-sm-6 animation2">
+                          <i class="fa fa-apple" aria-hidden="true"></i>
+                          Download for <b>Apple iOS</b></div>
+                        <!-- Android -->
+                        <div class="col-md-5 col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-6 animation3">
+                          <i class="fa fa-android" aria-hidden="true"></i>
+                          Download for <b>Android</b></div>
+                      </section><!-- end .platforms -->
+                    </div>
+                  </div><!-- end .row -->
+                </div><!-- end .container -->
             </div><!-- end .content-downloads -->
           </div><!-- end .row -->
         </div><!-- end .container-fluid -->
@@ -381,18 +389,19 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-              <form id="form" action="">
+              <form id="form" action="ajaxSubmit.php" class="form-horizontal">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Name" name="name">
+                  <input class="form-control" type="text" placeholder="Name" name="name" required>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Email" name="email">
+                  <input class="form-control" type="email" placeholder="Email" name="email" required>
                 </div>
                 <div class="form-group">
                   <textarea class="form-control" placeholder="Message" name="message"></textarea>
                 </div>
                 <input class="btn btn-default" type="submit" value="Send">
               </form>
+
             </div>
           </div><!-- end .row -->
         </div><!-- end .container -->
@@ -406,8 +415,11 @@
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/smooth-scroll.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/bootstrapValidator.js"></script>
 
       <script src="js/main.js"></script>
-      <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -62,12 +62,15 @@ textarea {
    }
 
    h2, h3 {
-     color: #15365b;
+     color:
+     font-family: 'Roboto', sans-serif;
+     font-weight: 700;
      margin-bottom: 50px;
    }
 
    h4 {
      color: #15365b;
+     font-family: 'Roboto', sans-serif;
      text-transform: uppercase;
    }
 
@@ -102,11 +105,18 @@ textarea {
 
    .nav > li > a {
      color: #fff;
+     font-family: 'Roboto', sans-serif;
      font-size: 1.3em;
+     font-weight: 700;
      text-transform: uppercase;
      text-shadow: 1px 1px 1px black;
      -moz-text-shadow: 1px 1px 1px black;
      -webkit-text-shadow: 1px 1px 1px black;
+   }
+
+   .nav > li.active {
+     background-color: #08192d;
+     transition: 1s all ease;
    }
 
    .nav > li > a:hover,
@@ -311,22 +321,132 @@ textarea {
      font-size: .75
    }
 
+   /* ANIMATIONS */
 
+   .animation1,
+   .animation2,
+   .animation3 {
+     opacity: 0;
+   }
+
+   .animation1 {
+
+   }
+
+   .animation2 {
+     animation-delay: .3s;
+     -webkit-animation-delay: .3s;
+   }
+
+   .animation3 {
+     animation-delay: .6s;
+     -webkit-animation-delay: .6s;
+   }
+
+   .form-control {
+     height: 44px;
+   }
+
+   .has-success .form-control-feedback {
+     color: #fff;
+     background-color: green;
+     border-radius: 50%;
+   }
+
+   .has-error .form-control-feedback {
+     color: #fff;
+     background-color: red;
+     border-radius: 50%;
+   }
+
+   .form-horizontal .has-feedback .form-control-feedback {
+     top: 5px!important;
+     right: 22px!important;
+     font-size: 1.2em;
+   }
+
+   .has-error .help-block {
+     background-color: red;
+     color: #fff;
+     padding: 10px;
+     border-radius: 10px;
+   }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    border: none;
+  }
 
+  .navbar-collapse.in,
+  .collapsing {
+    background-color: #081b31;
+  }
+
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-toggle:focus {
+    background-color: #081b31;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  #about blue-circle,
+  .blue-circle {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  .features-image {
+    text-align: center;
+  }
+
+  section#features h4,
+  section#features p {
+    text-align: center;
+  }
+
+  section#parallax {
+    background-attachment: scroll;
+  }
+
+  section#download .content-downloads {
+    height: 600px;
+  }
+
+  section#download div.phone,
+  section#download .downloads-empty {
+    width: 100%;
+  }
+
+  section#download .download {
+    top: 600px;
+    z-index: 10;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+  section#download .downloads-empty {
+    position: relative;
+  }
+
+  section#download .platforms > div {
+    margin-bottom: 10px;
+  }
+
+  section#download .platforms i {
+    top: 2px;
+  }
 
 }
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
 
 /* ==========================================================================
    Helper classes
